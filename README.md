@@ -1,2 +1,2 @@
 # cse102
-Has html and python programs.
+Utilizes html and python programs. Created basic user programs that take in input. Also, created a website through HTML using notepad++
