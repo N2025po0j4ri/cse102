@@ -1,0 +1,76 @@
+<!-- Nirupama Poojari, student
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: family.html
+ -->
+
+<!doctype html>
+<html>
+	<!--heading tag starts here-->
+	<head>
+		<!--title starts here and shows up as a worded page icon. It's only seen as symbols-->
+		<title>My Favorites</title>
+		<!--Here is a stylesheet-->
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+		<!--script tag has already ended. wow-->
+	</head>
+    <!--Where the head ends, the body itself began.-->
+	<body>
+		<center> <h1> Nirupama Poojari</h1></center>
+		<!--Button on click needs to be consistent throughout this code. Otherwise, there will be 
+		multiple errors-->
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<center>
+		<hr>
+		<!--Heading-->
+		<h2>My Favorite Movies</h2>
+		<br>
+		<!--Never ordered, viwers will not appreciate it.-->
+	    <center>
+		<li><b>Ready Player One (<a href="https://www.imdb.com/title/tt1677720/">IMDB</a>)</b></li>
+		<li><b>Mowgli: Legend of the Jungle (<a href="https://www.imdb.com/title/tt2388771/?ref_=fn_al_tt_1">IMDB</a>)</b></li>
+		<li><b>Baahubali: The Beginning (<a href="https://www.imdb.com/title/tt2631186/?ref_=nv_sr_srsg_3IMDB">IMDB</a>)</b></li>
+		<hr>
+		<button onclick="ColorChange()">Change Background Color</button>
+		</center>
+	</body>
+</html>

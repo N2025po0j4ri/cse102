@@ -1,0 +1,74 @@
+<!-- Nirupama Poojari, student
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: my moods.html
+-->
+
+<!doctype html> 
+<html>
+	<head>
+	<!--Everything in style sheets needs to be -->
+		<title>My Moods</title>
+		
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<center> <h1> Nirupama Poojari</h1></center>
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<!--Added webpage is here-->
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<center>
+		<hr>
+		<h2>My Mood in Pictures</h2>
+		<!--Div is not needed otherwise, I cannot see the horizonal position-->
+		<p><b> Confident:
+		<img src="squirrel.jpg" width="400px" height="500px">
+		<!--Changing the jpg image with something else.-->
+		Shock:
+		<img src="owl.jpg" width="400px" height="500px">
+		<hr>
+		<!--Change color button needs to show up throughout website-->
+		<button onclick="ColorChange()">Change Background Color</button>
+		</center>
+	</body>
+</html>

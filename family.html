@@ -1,0 +1,64 @@
+<!-- Nirupama Poojari, student
+Unique ID: cookj
+October 25,2020
+CSE 102
+
+Lab 8 Assignment
+Web Page: family.html
+Style Sheet: styleme.css -->
+
+<!doctype html> 
+<html>
+<!--Heading is on top. Extremely convenient.-->
+	<head>
+		<title>My Family</title>
+		
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		<!--Entire code here is not working as is. Something needs to change for document location.-->
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+		function ClassesPage() {
+			document.location.href = "classes.html";
+			}
+		function FavoritesPage() {
+			document.location.href = "favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "moods.html";
+			}
+			/*Coding got easier, but this needs to change over time*/
+		function FamilyPage() {
+			document.location.href = "family.html";
+			}
+			/*I am not at all interested in doing a color change for this project.*/
+		function ColorChange() {
+			document.body.style.background = 'lightyellow';
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+	    <!--Learned this in high school, it's not that difficult at all.-->
+		<button onclick="HomePage()">Home</button>
+		<button onclick="ClassesPage()">Classes</button>
+		<button onclick="FavoritesPage()">Favorites</button>
+		<button onclick="MoodsPage()">Moods</button>
+		<button onclick="FamilyPage()">Family</button>
+		<hr>
+		<!--Cool, but how do you draw in different people?-->
+		<h2>Fun Facts About My Family</h2>
+		<ul>
+		<li>Parents are well educated people</li>
+		<li>I grew up with multiple cousins. </li>
+		<li> Divya is a fashinista who is a science major </li>
+		<li>Devraj is well known for his cooking skills.</li>
+		<li>I am basically the middle-aged American"auntie" to several others.</li>
+		</ul>
+		<hr>
+		<!--Fun Features-->
+		<button onclick="ColorChange()">Change Background Color</button>
+	</body>
+</html>

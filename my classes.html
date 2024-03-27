@@ -1,0 +1,73 @@
+<!-- Nirupama Poojari, student
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: my classes.html
+-->
+
+<!doctype html>
+<!--Doctype html above is always the standard-->
+<html>
+	<head>
+	<!--Changed the My courses title-->
+		<title>My Courses</title>
+
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+	/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+
+	</head>
+	<body>
+		   <center> <h1> Nirupama Poojari</h1></center>
+		<!--Button on click needs to be consistent throughout this code. Otherwise, there will be 
+		multiple errors-->
+			<center>
+				<button onclick="HomePage()">Home</button>
+				<button onclick="ClassesPage()">My Classes</button>
+				<button onclick="FavoritesPage()">My Favorites</button>
+				<button onclick="MoodsPage()">My Moods</button>
+				<button onclick="FriendsPage()">My Friends</button>
+				<button onclick="ProgramPage()">Program</button>
+			</center>
+			<hr>
+			<center>
+			<h2>My Classes in CSE 
+			</h2>
+			<br>
+			<li><b>CSE 102 - Computer Sci & Software Eng.</b></li>
+			<li><b>STC 135 - Intro to Public Speaking</b></li>
+			<li><b>(Transfer College Credit)IT 153 - Intro to Java Programming</b></li>
+		    <hr>
+			<button onclick="ColorChange()">Change Background Color</button>
+			</center>
+	</body>
+</html>

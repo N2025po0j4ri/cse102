@@ -1,0 +1,91 @@
+
+<!-- Nirupama Poojari
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: convert.html
+Style Sheet: styleme.css -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+	<!--It seems that links need to be properly connected to each web page.-->
+		<meta charset="UTF-8">
+		<title>Miles to Kilometers</title>
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		 <center> <h1> Nirupama Poojari</h1></center>
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<!--Added webpage is here-->
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<hr>
+		<center>
+		<!--Good header, but I need to change to h1-->
+		<h1>Miles to Kilometers Conversion Page</h1>
+		<hr>
+		<p>
+		Enter the distance in Miles:
+		<!--I like this but I need to change the background color.-->
+		<input type="text" id="mileBox" size="10" value=""/>
+		</p>
+		<!--Paragraph tags are here.-->
+		<p>
+		<!--Below is the formula that my professor was referring to.-->
+		<!--My problem is that from lab9 prompt, I need to add more conversions to this code.-->
+		<input type="button" value="Convert to Kilometers" onclick="miles = document.getElementById('mileBox').value;
+			miles = parseFloat(miles);
+			kilo = miles*1.609;
+			document.getElementById('kiloBox').value = kilo;" />
+		</p>
+		<p>
+		<!--Entire description is here and can be seen as a paragraph tag.--->
+		Equivalent distance in Kilometers:
+		<input type="text" id="kiloBox" size="10" value=""/>
+		</p>
+		<hr>
+		<!--This is great, but the prompt is asking me to add more tables -->
+		<!--Assignment combines science and math for making a reable prompt.-->
+		<button onclick="ColorChange()">Change Background Color</button>
+		</center>
+	</body>
+</html>

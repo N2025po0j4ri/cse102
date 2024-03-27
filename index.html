@@ -1,0 +1,89 @@
+<!-- Nirupama Poojari, student
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: index.html
+-->
+<!-- Reference was professor cooks work.-->
+<!doctype html> 
+<html>
+<!--html starts here, doctype is always lowercase, why is this going on?-->
+	<head>
+		<title>About Me Page</title>
+		<!--Title itself covers the about me page necessary. -->
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<!--stylesheet here is not helping at all. -->
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+		<style>
+		div {
+			width: 900px;
+			margin: 0px 50px 20px;
+		}
+		</style>
+	</head>
+	<!--Head tag ends here before transitioning to the body tag.-->
+	<body>
+		<!--Here is the homepage tabs that covered what any person would like to consider.-->
+		<!--Biggest mistake that I did was not moving each page to the directory-->
+		<center> <h1> Nirupama Poojari</h1></center>
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<!--hr is a block. if not, I will explain somehow.-->
+		<hr>
+		<center>
+		<!--I am using br, I hope that this works.-->
+		<h2> About Me </h2>
+		<!--Really good step, however, the lines are not working at-->
+		<br>
+		<center>
+		<img src="poojarn.jpg" width="18%" height="18%" align="center" hspace="100" vspace="0">
+		</center>
+        </br>			
+		<!--Bring back the div entire strip is awful. How bad is this?!-->
+		<br>
+		<div>
+		<p><b>I am a student at Miami University. I transferred from CEC to CSE. I am a high school graduate from Metro Early College High School. I have volunteered at the CA Triplehorn Insect Collection Museaum at Ohio State University (OSU). I attended Kode With Klossy to build on my coding skills. Aside this, I am looking forward to mastering coding through future labs, projects, and exams.</p>
+		</div>
+		</br>
+		<!--hr block ends here.-->
+		<hr>
+		<!--Here is color change. This is needed so that the code works.-->
+		<button onclick="ColorChange()">Change Background Color</button>
+		</center>
+	</body>
+</html>

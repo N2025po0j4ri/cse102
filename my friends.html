@@ -1,0 +1,74 @@
+<!-- Nirupama Poojari, student
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: my neighbors.html
+-->
+
+<!doctype html>
+<html>
+<!--Heading is on top. Extremely convenient.-->
+	<head>
+		<title>My Family</title>
+
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Not helping me. I am seriously cringing at color scheme. TA warned me that this is going overboard.*/
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+	<!--heading tag ends here-->
+	</head>
+  
+	<body>
+	    <!--Learned this in high school, it's not that difficult at all.-->
+		<center> <h1> Nirupama Poojari</h1></center>
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<hr>
+		<!--Orginally, I thought it asked about family. It asked for neighbors.-->
+		<center><h2>Fun Facts About My Friends</h2></center>
+		<!--Edited entire template with things that I wanted to put. I have no idea why everything is this big.-->
+		<!--TA warned me about the bullet points. What are the guidelines for these???-->
+		<center>
+		<li><b>Caleb: Is creative and determined.</b></li>
+		<li><b>Angini: Recently joined ISA (Indian Students Association).</b></li>
+		<!--Something is wrong with the background color. I don't approve of this.-->
+		<hr>
+		<!--Above tag should work otherwise, there needs to be a lot of changes to add here-->
+		<button onclick="ColorChange()">Change Background Color</button>
+		</center>
+	</body>
+</html>

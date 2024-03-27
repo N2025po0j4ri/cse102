@@ -1,0 +1,95 @@
+
+<!-- Nirupama Poojari
+Unique ID: poojarn
+April 15, 2022
+CSE 102
+
+Lab 9 Assignment
+Web Page: even_odd.html
+Style Sheet: styleme.css -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+	<!--meta tag is used because this is referring to the hyperlink.-->
+		<meta charset="UTF-8">
+		<title>Even or Odd</title>
+		<!--Links are what takes user back to main program.-->
+		<link rel="stylesheet" type="text/css" href="styleme.css" />
+		<script>
+		/**Here my professor is doing the functions for each individual page*/
+		function HomePage() {
+			document.location.href = "index.html";
+			}
+			/*Follow indentation overall. Each function is a holder. Behold the scroll of things to learn from.*/
+		function ClassesPage() {
+			document.location.href = "my classes.html";
+			}
+			/*Update, I messed up on favorites.html, favorite.html, and index.html because some had the same info*/
+		function FavoritesPage() {
+			document.location.href =  "my favorites.html";
+			}
+		function MoodsPage() {
+			document.location.href = "my moods.html";
+			}
+			/*Saved this so that code can read everything*/
+		function FriendsPage() {
+			document.location.href = "my friends.html";
+			}
+		function ProgramPage() {
+			document.location.href = "program.html";
+			}
+			/*Background color button needs to be here*/
+		function ColorChange() {
+			document.body.style.background = '#ffcc00';
+			}
+		</script>
+		
+	</head>
+	<!--Head tag ends and body tag starts.-->
+	<body>
+		<center> <h1> Nirupama Poojari</h1></center>
+		<center>
+			<button onclick="HomePage()">Home</button>
+			<button onclick="ClassesPage()">My Classes</button>
+			<button onclick="FavoritesPage()">My Favorites</button>
+			<button onclick="MoodsPage()">My Moods</button>
+			<button onclick="FriendsPage()">My Friends</button>
+			<!--Added webpage is here-->
+			<button onclick="ProgramPage()">Program</button>
+		</center>
+		<hr>
+		<!--Center tag was missing here. I need to fix this in this assignment.-->
+		<center>
+		<!--h1 header is here-->
+		<h1>Check if a number is Even or Odd</h1>
+		<hr>
+		<!--Input is here-->
+		<p>
+		Enter any Integer number:
+		<input type="text" id="numBox" size="10" value=""/>
+		</p>
+		<p>
+		<!--Entire code was pasted into input area. I wished he explained this.-->
+		<input type="button" value="Check if Even or Odd" onclick="inputNum = document.getElementById('numBox').value;
+			 if(inputNum%2==0){
+                document.getElementById('typeBox').value = 'even';
+             }else {
+                document.getElementById('typeBox').value = 'odd';
+             }" />
+		</p>
+		<!--Loved the techniques used in this examples-->
+		<p>
+		The Integer you input is:
+		<input type="text" id="typeBox" size="10" value=""/>
+		</p>
+		<!--p tage ends here-->
+		<hr>
+		<!--Updated it and kept the "Change Background Color" button. Best moment ever-->
+		<button onclick="ColorChange()">Change Background Color</button>
+		<!--center tag ends here-->
+		</center>
+		<!--Body tag ends here.-->
+	</body>
+<!--HTML tag ends right here.-->
+</html>
